@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dsi.smartpajak">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".KalkulatorBphtbActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KalkulatorPbbActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/LightStatusBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/LightStatusBar" />
+        <activity
+            android:name=".PBBCheckActivity"
+            android:theme="@style/LightStatusBar" />
+        <activity
+            android:name=".PBBActivity"
+            android:theme="@style/LightStatusBar" />
+        <activity
+            android:name=".PBBDetailActivity"
+            android:theme="@style/LightStatusBar" />
+        <activity
+            android:name=".PADLoginActivity"
+            android:theme="@style/LightStatusBar" />
+        <activity
+            android:name=".MainPADActivity"
+            android:theme="@style/LightStatusBar" />
+        <activity
+            android:name=".SSPDDetailActivity"
+            android:theme="@style/LightStatusBar" />
+        <activity
+            android:name=".HowToPayActivity"
+            android:theme="@style/LightStatusBar" />
+
+        <service android:name=".services.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

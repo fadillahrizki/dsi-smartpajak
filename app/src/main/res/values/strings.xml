@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Smart Pajak</string>
+
+    <string name="pbb_check_btn_label">Cek PBB</string>
+    <string name="pad_login_btn_label">Login PAD</string>
+    <string name="pad_dashboard_btn_label">Dasbor PAD</string>
+
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+
+    <string name="login_btn_label">Login</string>
+
+    <string name="tb_menu_logout_label">Log Out</string>
+
+    <string name="bnv_skpd_label">SKPD</string>
+    <string name="bnv_tunggakan_label">Tunggakan</string>
+    <string name="bnv_sspd_label">SSPD</string>
+
+    <string name="no_data_label">Belum ada data</string>
+
+    <string name="error_label">Gagal memuat data</string>
+
+    <string name="reload_label">Muat Ulang</string>
+</resources>

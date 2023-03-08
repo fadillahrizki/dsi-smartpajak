@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:alpha=".2"
+        android:src="@drawable/bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="48dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/app_logo" />
+
+        <RelativeLayout
+            android:id="@+id/pbb_check_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/btn_blue_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableStart="@drawable/ic_search_white_18dp"
+                android:drawablePadding="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:text="@string/pbb_check_btn_label" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pad_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/btn_yellow_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableStart="@drawable/ic_lock_white_18dp"
+                android:drawablePadding="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:text="@string/pad_login_btn_label" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pad_dashboard_btn"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/btn_yellow_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableStart="@drawable/ic_home_white_18dp"
+                android:drawablePadding="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:text="@string/pad_dashboard_btn_label" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pad_how_to_pay_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/btn_blue_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawableStart="@drawable/ic_help_white_18dp"
+                android:drawablePadding="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:text="Cara Bayar" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:lineHeight="22dp"
+            android:textAlignment="center"
+            android:text="Badan Pendapatan Daerah\nKabupaten Asahan"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/colorBlueDark" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/asahan" />
+
+    </LinearLayout>
+
+</RelativeLayout>

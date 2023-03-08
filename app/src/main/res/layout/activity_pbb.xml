@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white"
+    tools:context=".PADLoginActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        android:background="@android:color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:src="@drawable/tb_logo" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:alpha=".2"
+            android:src="@drawable/bg" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_lyt"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/pbb_online_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:textAlignment="center"
+                        android:text="PBB ONLINE"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlueDark" />
+
+                    <TextView
+                        android:id="@+id/kab_asahan_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:textAlignment="center"
+                        android:text="KABUPATEN ASAHAN"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/years_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="16dp"
+                        android:paddingLeft="22dp"
+                        android:paddingRight="22dp"
+                        android:clipToPadding="false"
+                        android:scrollbars="none" />
+
+                    <TextView
+                        android:id="@+id/title_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="-6dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/detail_tv"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:layout_marginTop="24dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="sans-serif-medium"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/white"
+                        android:text="LIHAT RINCIAN"
+                        android:background="@drawable/btn_blue_bg" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:cardCornerRadius="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="19dp"
+                                android:paddingLeft="24dp"
+                                android:paddingRight="24dp"
+                                android:paddingBottom="19dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp"
+                                    android:text="Letak Objek Pajak"
+                                    android:textSize="12sp"
+                                    android:textColor="#999" />
+
+                                <TextView
+                                    android:id="@+id/letak_objek_pajak_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineSpacingMultiplier="1.2"
+                                    android:text="Letak Objek Pajak"
+                                    android:textSize="14sp"
+                                    android:textColor="@android:color/black" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:background="#f5f5f5" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp"
+                                    android:text="Nama dan Alamat Wajib Pajak"
+                                    android:textSize="12sp"
+                                    android:textColor="#999" />
+
+                                <TextView
+                                    android:id="@+id/nama_alamat_wajib_pajak_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineSpacingMultiplier="1.2"
+                                    android:text="Nama dan Alamat Wajib Pajak"
+                                    android:textSize="14sp"
+                                    android:textColor="@android:color/black" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:cardCornerRadius="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="19dp"
+                                android:paddingLeft="24dp"
+                                android:paddingRight="24dp"
+                                android:paddingBottom="19dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:lineSpacingMultiplier="1.2"
+                                        android:text="Objek Pajak"
+                                        android:textSize="14sp"
+                                        android:textColor="#999" />
+
+                                    <TextView
+                                        android:id="@+id/objek_pajak_bumi_tv"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textAlignment="textEnd"
+                                        android:lineSpacingMultiplier="1.2"
+                                        android:text="Bumi"
+                                        android:textSize="14sp"
+                                        android:textColor="@android:color/black" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:background="#f5f5f5" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginBottom="2dp"
+                                        android:text="Luas (M2)"
+                                        android:textSize="14sp"
+                                        android:textColor="#999" />
+
+                                    <TextView
+                                        android:id="@+id/luas_op_bumi_tv"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textAlignment="textEnd"
+                                        android:lineSpacingMultiplier="1.2"
+                                        android:text="Luas"
+                                        android:textSize="14sp"
+                                        android:textColor="@android:color/black" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:background="#f5f5f5" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginBottom="2dp"
+                                        android:text="Kelas"
+                                        android:textSize="14sp"
+                                        android:textColor="#999" />
+
+                                    <TextView
+                                        android:id="@+id/kelas_op_bumi_tv"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textAlignment="textEnd"
+                                        android:lineSpacingMultiplier="1.2"
+                                        android:text="Kelas"
+                                        android:textSize="14sp"
+                                        android:textColor="@android:color/black" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:background="#f5f5f5" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginBottom="2dp"
+                                        android:text="NJOP Per M2 (Rp)"
+                                        android:textSize="14sp"
+                                        android:textColor="#999" />
+
+                                    <TextView
+                                        android:id="@+id/njop_per_m_op_bumi_tv"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textAlignment="textEnd"
+                                        android:lineSpacingMultiplier="1.2"
+                                        android:text="NJOP Per M2 (Rp)"
+                                        android:textSize="14sp"
+                                        android:textColor="@android:color/black" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:background="#f5f5f5" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginBottom="2dp"
+                                        android:text="Total NJOP (Rp)"
+                                        android:textSize="14sp"
+                                        android:textColor="#999" />
+
+                                    <TextView
+                                        android:id="@+id/total_njop_op_bumi_tv"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textAlignment="textEnd"
+                                        android:lineSpacingMultiplier="1.2"
+                                        android:text="Total NJOP (Rp)"
+                                        android:textSize="14sp"
+                                        android:textColor="@android:color/black" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:cardCornerRadius="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="19dp"
+                                android:paddingLeft="24dp"
+                                android:paddingRight="24dp"
+                                android:paddingBottom="19dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:lineSpacingMultiplier="1.2"
+                                        android:text="Objek Pajak"
+                                        android:textSize="14sp"
+                                        android:textColor="#999" />
+
+                                    <TextView
+                                        android:id="@+id/objek_pajak_bangunan_tv"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textAlignment="textEnd"
+                                        android:lineSpacingMultiplier="1.2"
+                                        android:text="Bangunan"
+                                        android:textSize="14sp"
+                                        android:textColor="@android:color/black" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:background="#f5f5f5" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginBottom="2dp"
+                                        android:text="Luas (M2)"
+                                        android:textSize="14sp"
+                                        android:textColor="#999" />
+
+                                    <TextView
+                                        android:id="@+id/luas_op_bangunan_tv"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textAlignment="textEnd"
+                                        android:lineSpacingMultiplier="1.2"
+                                        android:text="Luas"
+                                        android:textSize="14sp"
+                                        android:textColor="@android:color/black" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:background="#f5f5f5" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginBottom="2dp"
+                                        android:text="Kelas"
+                                        android:textSize="14sp"
+                                        android:textColor="#999" />
+
+                                    <TextView
+                                        android:id="@+id/kelas_op_bangunan_tv"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textAlignment="textEnd"
+                                        android:lineSpacingMultiplier="1.2"
+                                        android:text="Kelas"
+                                        android:textSize="14sp"
+                                        android:textColor="@android:color/black" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:background="#f5f5f5" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginBottom="2dp"
+                                        android:text="NJOP Per M2 (Rp)"
+                                        android:textSize="14sp"
+                                        android:textColor="#999" />
+
+                                    <TextView
+                                        android:id="@+id/njop_per_m_op_bangunan_tv"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textAlignment="textEnd"
+                                        android:lineSpacingMultiplier="1.2"
+                                        android:text="NJOP Per M2 (Rp)"
+                                        android:textSize="14sp"
+                                        android:textColor="@android:color/black" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:background="#f5f5f5" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginBottom="2dp"
+                                        android:text="Total NJOP (Rp)"
+                                        android:textSize="14sp"
+                                        android:textColor="#999" />
+
+                                    <TextView
+                                        android:id="@+id/total_njop_op_bangunan_tv"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textAlignment="textEnd"
+                                        android:lineSpacingMultiplier="1.2"
+                                        android:text="Total NJOP (Rp)"
+                                        android:textSize="14sp"
+                                        android:textColor="@android:color/black" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            app:cardCornerRadius="6dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="19dp"
+                                android:paddingLeft="24dp"
+                                android:paddingRight="24dp"
+                                android:paddingBottom="19dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp"
+                                    android:text="NJOP sebagai dasar pengenaan PBB"
+                                    android:textSize="12sp"
+                                    android:textColor="#999" />
+
+                                <TextView
+                                    android:id="@+id/njop_dasar_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineSpacingMultiplier="1.2"
+                                    android:text="NJOP sebagai dasar pengenaan PBB"
+                                    android:textSize="14sp"
+                                    android:textColor="@android:color/black" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:background="#f5f5f5" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp"
+                                    android:text="NJOPTKP (NJOP Tidak Kena Pajak)"
+                                    android:textSize="12sp"
+                                    android:textColor="#999" />
+
+                                <TextView
+                                    android:id="@+id/njop_tkp_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineSpacingMultiplier="1.2"
+                                    android:text="Total NJOP (Rp)"
+                                    android:textSize="14sp"
+                                    android:textColor="@android:color/black" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:background="#f5f5f5" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp"
+                                    android:text="NJOP untuk penghitungan PBB"
+                                    android:textSize="12sp"
+                                    android:textColor="#999" />
+
+                                <TextView
+                                    android:id="@+id/njop_pbb_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineSpacingMultiplier="1.2"
+                                    android:text="NJOP untuk penghitungan PBB"
+                                    android:textSize="14sp"
+                                    android:textColor="@android:color/black" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:background="#f5f5f5" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp"
+                                    android:text="PBB yang Terhutang 0,1%"
+                                    android:textSize="12sp"
+                                    android:textColor="#999" />
+
+                                <TextView
+                                    android:id="@+id/pbb_terhutang_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineSpacingMultiplier="1.2"
+                                    android:text="PBB yang Terhutang 0,1%"
+                                    android:textSize="14sp"
+                                    android:textColor="@android:color/black" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:background="#f5f5f5" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="2dp"
+                                    android:text="Tanggal Jatuh Tempo"
+                                    android:textSize="12sp"
+                                    android:textColor="#999" />
+
+                                <TextView
+                                    android:id="@+id/tanggal_jatuh_tempo_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineSpacingMultiplier="1.2"
+                                    android:text="PBB yang Terhutang 0,1%"
+                                    android:textSize="14sp"
+                                    android:textColor="@android:color/black" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:background="#f5f5f5" />
+
+                                <TextView
+                                    android:id="@+id/jumlah_pembayaran_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:lineSpacingMultiplier="1.2"
+                                    android:text="PAJAK BUMI DAN BANGUNAN YANG HARUS DIBAYAR (Rp)"
+                                    android:textSize="14sp"
+                                    android:textColor="@android:color/black" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:background="#f5f5f5" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="Status Pembayaran"
+                                    android:textSize="12sp"
+                                    android:textColor="#999" />
+
+                                <TextView
+                                    android:id="@+id/status_pembayaran_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:paddingTop="3dp"
+                                    android:paddingRight="11dp"
+                                    android:paddingBottom="3dp"
+                                    android:paddingLeft="11dp"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="STATUS"
+                                    android:textSize="11sp"
+                                    android:textColor="@android:color/white"
+                                    android:background="@drawable/badge_bg" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <include layout="@layout/loader" />
+
+        <include
+            android:visibility="gone"
+            layout="@layout/error" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

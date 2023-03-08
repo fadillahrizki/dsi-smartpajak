@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_skpd"
+        android:icon="@drawable/ic_assignment_white_24dp"
+        android:title="@string/bnv_skpd_label" />
+
+    <item
+        android:id="@+id/nav_tunggakan"
+        android:icon="@drawable/ic_assignment_late_white_24dp"
+        android:title="@string/bnv_tunggakan_label" />
+
+    <item
+        android:id="@+id/nav_sspd"
+        android:icon="@drawable/ic_assignment_white_24dp"
+        android:title="@string/bnv_sspd_label" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_account_circle_white_24dp"
+        android:title="Profil" />
+
+</menu>

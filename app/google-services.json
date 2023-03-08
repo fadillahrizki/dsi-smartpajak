@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "16029458505",
+    "firebase_url": "https://smartpajak.firebaseio.com",
+    "project_id": "smartpajak",
+    "storage_bucket": "smartpajak.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16029458505:android:ca662054053719d08c5f98",
+        "android_client_info": {
+          "package_name": "com.dsi.smartpajak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16029458505-qo07snergrc26bp957tmqpgvk9gsk3m6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dsi.smartpajak",
+            "certificate_hash": "3cb6e6768b23cd876d4339e8a7a996401faeba24"
+          }
+        },
+        {
+          "client_id": "16029458505-5dgivcltceqtmps81llafc7ab5813bf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgzg9y0Qb1919ELb_IEqjSgubx6ZYEINI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16029458505-5dgivcltceqtmps81llafc7ab5813bf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

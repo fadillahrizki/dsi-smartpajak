@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="19dp"
+        android:paddingBottom="19dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="NPWPD"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:textColor="#888" />
+
+        <TextView
+            android:id="@+id/npwpd_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NPWPD"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="4dp"
+            android:text="Nama Usaha / Badan / Pemilik"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:textColor="#888" />
+
+        <TextView
+            android:id="@+id/nama_usaha_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Usaha / Badan / Pemilik"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="4dp"
+            android:text="Alamat"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:textColor="#888" />
+
+        <TextView
+            android:id="@+id/alamat_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="4dp"
+            android:text="Kecamatan"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:textColor="#888" />
+
+        <TextView
+            android:id="@+id/kecamatan_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kecamatan"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="4dp"
+            android:text="Desa/Kelurahan"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:textColor="#888" />
+
+        <TextView
+            android:id="@+id/desa_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desa/Kelurahan"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="4dp"
+            android:text="Kontak"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:textColor="#888" />
+
+        <TextView
+            android:id="@+id/kontak_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kontak"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

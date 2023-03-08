@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/activity_how_to_pay.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/activity_kalkulator_bphtb.xml" value="0.25" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/activity_kalkulator_pbb.xml" value="0.3460964694181999" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/activity_main2.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/activity_main_pad.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/activity_pad_login.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/activity_pbb.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/activity_pbb_check.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/activity_pbb_detail.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/activity_splash.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/activity_sspd_detail.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/fragment_profile.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/fragment_skpd.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/fragment_sspd.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/fragment_tunggakan.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/loader.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/loader_item.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/no_data.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/pajak_item.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/pay_step_item.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/pbb_detail_item.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/perhitungan_bphtb.xml" value="0.33611111111111114" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/perhitungan_njop.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/perhitungan_pbb.xml" value="0.25" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/sspd_item.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/title_item.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/tunggakan_item.xml" value="0.3625" />
+        <entry key="..\:/Programming/DSI/SmartPajak/SmartPajak/app/src/main/res/layout/year_item.xml" value="0.3625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.22327898550724637" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
